@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from "./components/Footer";
+import FormComponent from "./components/FormComponent";
+import HeaderSection from "./components/HeaderSection";
+import ImpressionenScreen from "./components/ImpressionenScreen";
+import KonzertScreen from "./components/KonzertScreen";
+import Phonova from "./components/Phonova";
+import Termine from "./components/Termine";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeaderSection />
+      <Phonova />
+      <Termine />
+      <KonzertScreen />
+      <ImpressionenScreen />
+      <FormComponent />
+      <Footer />
     </div>
   );
 }

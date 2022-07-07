@@ -1,13 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Lato', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header-section {
+    background-image: url('./assets/pexels-fauxels-3184465.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.4);
+}
+
+.h-150 {
+    height: 35rem;
+}
+
+@media screen and (max-width:450px) {
+    /* Bei jedem größeren Monitor kommen neue Regeln hinzu */
+    .h-150 {
+        height: 35rem;
+    }
+}
+
+hr {
+    border: none;
+    width: 2.5rem;
+    height: 5px;
+    /* Set the hr color */
+    /* old IE */
+    background-color: lightcoral;
+    /* Modern Browsers */
+}
+
+.impressionen-screen {
+    background-image: url('./assets/istockphoto-183305123-612x612.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.4);
 }
